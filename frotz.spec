@@ -29,7 +29,9 @@ Fiction Adventure.
 %patch1 -p1
 
 %build
-%{__make}
+%{__make} \
+	CC="%{__cc}" \
+	OPTS="%{rpmcflags} -I/usr/include/ncurses"
 
 %install
 rm -rf $RPM_BUILD_ROOT
