@@ -1,0 +1,32 @@
+diff -urN frotz-2.43/Makefile /usr/local/1install/rpm/BUILD/frotz-2.43/Makefile
+--- frotz-2.43/Makefile	Mon Oct 28 02:21:52 2002
++++ /usr/local/1install/rpm/BUILD/frotz-2.43/Makefile	Tue Aug 12 02:36:05 2003
+@@ -7,24 +7,24 @@
+ # Define your optimization flags.  Most compilers understand -O and -O2,
+ # Standard (note: Solaris on UltraSparc using gcc 2.8.x might not like this.)
+ #
+-OPTS = -O2 
++OPTS = -O2 -I/usr/include/ncurses
+ 
+ # Pentium with gcc 2.7.0 or better
+ #OPTS = -O2 -fomit-frame-pointer -malign-functions=2 -malign-loops=2 \
+ #-malign-jumps=2
+ 
+ # Define where you want Frotz installed.  Usually this is /usr/local
+-PREFIX = /usr/local
++PREFIX = /usr
+ 
+ MAN_PREFIX = $(PREFIX)
+ #MAN_PREFIX = /usr/local/share
+ 
+-CONFIG_DIR = $(PREFIX)/etc
++#CONFIG_DIR = $(PREFIX)/etc
+ #CONFIG_DIR = /etc
+ 
+ # Define where you want Frotz to look for frotz.conf.
+ #
+-CONFIG_DIR = /usr/local/etc
++CONFIG_DIR = /etc
+ #CONFIG_DIR = /etc
+ #CONFIG_DIR = /usr/pkg/etc
+ #CONFIG_DIR =

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+GAME=/usr/share/games/zcode/`basename $0`.z5
+
+if [ -f $GAME ]; then
+	frotz $GAME
+else
+	echo "This game does not exist."
+fi
