@@ -11,7 +11,6 @@ Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-config.patch
 URL:		http://www.ifarchive.org/
 BuildRequires:	ncurses-devel
-Requires:	ncurses
 Provides:	zcode-interpreter
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
