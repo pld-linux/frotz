@@ -1,0 +1,40 @@
+diff -urN /root/1/frotz-2.43/doc/frotz.conf-big frotz-2.43/doc/frotz.conf-big
+--- /root/1/frotz-2.43/doc/frotz.conf-big	Sat Oct 28 19:43:07 2000
++++ frotz-2.43/doc/frotz.conf-big	Tue Aug 12 16:11:41 2003
+@@ -16,13 +16,13 @@
+ foreground	white
+ 
+ # Set background color		(default "blue" if in color mode)
+-background	blue
++background	black
+ 
+ # Set error-reporting mode	(default "once")
+ errormode	once
+ 
+ # Set path to search for game files (no default)
+-zcode_path	/usr/local/games/zcode
++zcode_path	/usr/share/games/zcode
+ 
+ # Use plain ASCII only		(default "no")
+ ascii		no
+@@ -60,16 +60,16 @@
+ # Force color mode		(default "no")
+ # Useful for use with supposedly current flavors of Unix that still don't
+ # understand what the "xterm-color" terminal type is.
+-force_color	no
++#force_color	no
+ 
+ # Set screen height		(default is detected height)
+-screen_height	24
++#screen_height	24
+ 
+ # Set screen width		(default is detected screen width)
+-screen_width	80
++#screen_width	80
+ 
+ # Set script width		(default is screen width)
+-script_width	80
++#script_width	80
+ 
+ # Set context lines		(default "0")
+ context_lines	0
