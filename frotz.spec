@@ -2,7 +2,7 @@ Summary:	Interpreter for old Infocom text games
 Summary(pl):	Interpreter dla starych tekstówek Infocomu
 Name:		frotz
 Version:	2.43
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Games
 Source0:	ftp://ftp.ifarchive.org/if-archive/infocom/interpreters/frotz/%{name}-%{version}.tar.gz
@@ -48,6 +48,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS BUGS ChangeLog HOW_TO_PLAY README README.1st SPEECH TODO
+%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/frotz.conf
 %attr(755,root,root) %{_bindir}/frotz
 %{_mandir}/man6/*
-%{_sysconfdir}/frotz.conf
