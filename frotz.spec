@@ -10,7 +10,7 @@ Source0:	ftp://ftp.ifarchive.org/if-archive/infocom/interpreters/frotz/%{name}-%
 Source1:	%{name}-wrapper
 Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-config.patch
-URL:		www.ifarchive.org
+URL:		http://www.ifarchive.org/
 BuildRequires:	ncurses-devel
 Requires:	ncurses
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -33,10 +33,11 @@ Fiction Adventure.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_sysconfdir}
-install -d $RPM_BUILD_ROOT%{_datadir}/games/zcode
+install -d $RPM_BUILD_ROOT{%{_sysconfdir},%{_datadir}/games/zcode}
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
+
 install doc/frotz.conf-big $RPM_BUILD_ROOT%{_sysconfdir}/frotz.conf
 install %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/games/zcode/wrapper.sh
 
