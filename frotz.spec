@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Games
 Source0:	ftp://ftp.ifarchive.org/if-archive/infocom/interpreters/frotz/%{name}-%{version}.tar.gz
+# Source0-md5:	efe51879e012b92bb8d5f4a82e982677
 Source1:	%{name}-wrapper
 Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-config.patch
