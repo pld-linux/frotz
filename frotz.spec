@@ -1,5 +1,5 @@
 Summary:	Interpreter for old Infocom text games
-Summary(pl):	Interpreter dla starych tekstÛwek Infocomu
+Summary(pl.UTF-8):   Interpreter dla starych tekst√≥wek Infocomu
 Name:		frotz
 Version:	2.43
 Release:	3
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Interpreter for old Infocom text games, so called Interactive Fiction
 Adventure.
 
-%description -l pl
-Interpreter dla starych tekstÛwek Infocomu, zwanych takøe Interactive
+%description -l pl.UTF-8
+Interpreter dla starych tekst√≥wek Infocomu, zwanych tak≈ºe Interactive
 Fiction Adventure.
 
 %prep
