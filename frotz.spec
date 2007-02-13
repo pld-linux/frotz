@@ -1,5 +1,5 @@
 Summary:	Interpreter for old Infocom text games
-Summary(pl.UTF-8):   Interpreter dla starych tekstówek Infocomu
+Summary(pl.UTF-8):	Interpreter dla starych tekstówek Infocomu
 Name:		frotz
 Version:	2.43
 Release:	3
